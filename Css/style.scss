@@ -10,6 +10,14 @@ body {
   background-color: #c7d9e2;
 }
 
+.position-sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+}
+
 .btn {
   border-radius: 0;
   &.btn-primary {
