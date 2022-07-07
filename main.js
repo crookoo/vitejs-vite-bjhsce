@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         content: ["<a href='#/'>Impressum</a>", "<a href='#/'>Datenschutz</a>"],
       },
     ],
+    setSelected: {
+      hover: false,
+    },
   });
 
   window.onscroll = function () {

@@ -1,7 +1,6 @@
 .mm-menu {
   --mm-listitem-size: 3.5rem;
   font-size: 1.125rem;
-  .mm-navbars,
   .mm-navbars_top,
   .mm-navbars_bottom {
     --mm-color-background: #76b82a;
@@ -13,11 +12,17 @@
         color: white;
       }
     }
-    &.mm-navbars--top {
+  }
+  .mm-navbars_top {
+    .mm-navbar {
       border-bottom: none;
     }
-    &.mm-navbars--bottom {
-      border-top: none;
+  }
+  .mm-navbars_bottom {
+    .mm-navbar {
+      &:first-child {
+        border-top: none;
+      }
       a:first-child {
         border-right: 1px solid $lightergreen;
       }
