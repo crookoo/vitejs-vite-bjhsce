@@ -1,7 +1,9 @@
 .mm-menu {
   --mm-listitem-size: 3.5rem;
   font-size: 1.125rem;
-  .mm-navbars {
+  .mm-navbars,
+  .mm-navbars_top,
+  .mm-navbars_bottom {
     --mm-color-background: #76b82a;
     --mm-navbar-size: 3.5rem;
     .mm-navbar {
