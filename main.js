@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const menu = new Mmenu('#menu', {
     navbar: {
-      title: 'VSB Nordhessen',
+      title: 'VSB - Akademie der Wirtschaft',
     },
-    theme: 'light',
     navbars: [
       {
         position: 'top',
@@ -11,17 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         position: 'bottom',
-        content: [
-          "<a class='fa fa-envelope' href='#/'>Impressum</a>",
-          "<a class='fa fa-twitter' href='#/'>Datenschutz</a>",
-        ],
+        content: ["<a href='#/'>Impressum</a>", "<a href='#/'>Datenschutz</a>"],
       },
     ],
-  });
-
-  const api = menu.API;
-  document.querySelector('#open-button').addEventListener('click', () => {
-    api.open();
   });
 
   window.onscroll = function () {
@@ -29,9 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function scrollFunction() {
+    const offsetTop = 60;
     if (
-      document.body.scrollTop > 60 ||
-      document.documentElement.scrollTop > 60
+      window.pageYOffset > offsetTop ||
+      document.body.scrollTop > offsetTop ||
+      document.documentElement.scrollTop > offsetTop
     ) {
       document.getElementById('navbar').classList.add('shrink');
     } else {

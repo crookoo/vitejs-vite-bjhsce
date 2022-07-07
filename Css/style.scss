@@ -7,7 +7,7 @@ $black: #070d0d;
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: $lightergreen;
+  background-color: #c7d9e2;
 }
 
 .btn {
@@ -54,12 +54,20 @@ body {
         width: 160px;
       }
     }
-    .nav-toggler {
+    .navbar-toggler-wrapper {
       display: flex;
       align-items: center;
-      a {
-        .navbar-toggler-icon {
-          width: 38px;
+      .navbar-toggler {
+        border: none;
+        padding: 0;
+        div {
+          width: 32px;
+          height: 3px;
+          background-color: $black;
+          margin: 8px 0;
+        }
+        &:focus {
+          box-shadow: none;
         }
       }
     }
@@ -112,3 +120,5 @@ main {
   margin: 3% 0;
   min-height: 175rem;
 }
+
+@import 'mmenu-custom.scss';
