@@ -90,21 +90,20 @@ body {
           .nav-link {
             display: flex;
             align-items: center;
-            //border-top: 7px solid transparent;
             font-size: 21px;
             font-weight: 600;
             text-transform: uppercase;
             padding: 0;
-            border-top: 8px solid transparent;
+            padding-top: 8px;
             padding-bottom: 8px;
             margin-right: 47px;
             color: $black;
             &.active {
               border-top: 8px solid $primary;
+              padding-top: 0;
               color: $primary;
             }
             &:hover {
-              //border-top: 8px solid $primary;
               color: $primary;
             }
           }
@@ -118,8 +117,11 @@ body {
   }
   &.shrink {
     .navbar-brand {
-      width: 100px;
+      width: 85px;
       padding: 0.4rem 0 0.6rem;
+      @include media-breakpoint-up(md) {
+        width: 100px;
+      }
     }
   }
 }
