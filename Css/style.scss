@@ -107,6 +107,19 @@ body {
               color: $primary;
             }
           }
+          @include media-breakpoint-up(md) {
+            .dropdown-menu {
+              display: none;
+            }
+            &:hover {
+              .dropdown-menu {
+                display: block;
+                top: 100%;
+                left: 0;
+                margin-top: 0;
+              }
+            }
+          }
         }
       }
       .nav-button {
