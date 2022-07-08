@@ -34,11 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('navbar').classList.remove('shrink');
     }
   }
-
-  // Prevent closing from click inside dropdown
-  document.querySelectorAll('.dropdown-menu').forEach(function (element) {
-    element.addEventListener('click', function (e) {
-      e.stopPropagation();
-    });
-  });
 });

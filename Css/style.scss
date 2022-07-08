@@ -140,27 +140,15 @@ body {
 }
 
 @include media-breakpoint-up(md) {
-  .dropdown-menu li {
-    position: relative;
-  }
-  .dropdown-menu .submenu {
-    display: none;
-    left: 100%;
-    top: 0;
-  }
-  .dropdown-menu > li:hover > .submenu,
-  .dropdown:hover > .dropdown-menu {
-    display: block;
-  }
-  .dropdown-menu > li:hover > .submenu {
-    top: 0;
-    left: 100%;
-    margin-top: 0;
-  }
-  .dropdown:hover > .dropdown-menu {
+  .dropdown:hover .dropdown-menu {
     display: block;
     top: 100%;
-    left: 0;
+    margin-top: 0;
+  }
+  .dropdown .dropdown-menu {
+    display: none;
+  }
+  .dropdown-menu[data-bs-popper] {
     margin-top: 0;
   }
 }
