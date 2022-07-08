@@ -145,11 +145,11 @@ body {
     top: 100%;
     margin-top: 0;
   }
-  .dropdown .dropdown-menu {
-    display: none;
-  }
   .dropdown-menu[data-bs-popper] {
     margin-top: 0;
+  }
+  .dropdown .dropdown-menu {
+    display: none;
   }
 }
 
