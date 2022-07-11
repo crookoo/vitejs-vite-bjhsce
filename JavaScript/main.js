@@ -47,6 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdownMenu.classList.add('show');
       dropdownMenu.setAttribute('data-bs-popper', 'none');
     });
+    dropdown.addEventListener('click', function () {
+      dropdownToggle.classList.add('show');
+      dropdownToggle.setAttribute('aria-expanded', 'true');
+      dropdownMenu.classList.add('show');
+      dropdownMenu.setAttribute('data-bs-popper', 'none');
+    });
     dropdown.addEventListener('mouseout', function () {
       dropdownToggle.classList.remove('show');
       dropdownToggle.setAttribute('aria-expanded', 'false');
