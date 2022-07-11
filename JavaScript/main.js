@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document
       .querySelectorAll('.navbar .nav-item')
       .forEach(function (everyitem) {
-        everyitem.addEventListener('mouseover', function (e) {
+        /*everyitem.addEventListener('mouseover', function (e) {
           let el_link = this.querySelector('a[data-bs-toggle]');
           let firstClick = true;
 
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nextEl.classList.remove('show');
             let firstClick = true;
           }
-        });
+        });*/
 
         everyitem.addEventListener('click', function () {
           let el_link = this.querySelector('a[data-bs-toggle]');

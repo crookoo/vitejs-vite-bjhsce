@@ -116,7 +116,7 @@ body {
               }
             }
             .dropdown-menu {
-              display: none; //
+              //display: none; //
               margin-top: 0; //
               top: 100%;
               left: -1.65rem;
@@ -135,11 +135,11 @@ body {
               }
             }
           }
-          &:hover {
+          /*&:hover {
             .dropdown-menu {
               display: block; //
             }
-          }
+          }*/
         }
       }
       .nav-button {
