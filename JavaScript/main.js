@@ -56,21 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdownMenu.removeAttribute('data-bs-popper', 'none');
     });
 
-    dropdown.addEventListener('click', function () {
-      if (firstClick) {
-        dropdownToggle.classList.add('show');
-        dropdownToggle.setAttribute('aria-expanded', 'true');
-        dropdownMenu.classList.add('show');
-        dropdownMenu.setAttribute('data-bs-popper', 'none');
-        firstClick = false;
-      } else {
-        dropdownToggle.classList.remove('show');
-        dropdownToggle.setAttribute('aria-expanded', 'false');
-        dropdownMenu.classList.remove('show');
-        dropdownMenu.removeAttribute('data-bs-popper', 'none');
-        firstClick = true;
-      }
-    });
   });*/
 
   if (window.innerWidth >= 992) {
