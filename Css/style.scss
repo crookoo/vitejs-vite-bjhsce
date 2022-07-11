@@ -116,10 +116,10 @@ body {
               }
             }
             .dropdown-menu {
-              display: none;
+              //display: none;
               top: 100%;
               left: -1.65rem;
-              margin-top: 0;
+              //margin-top: 0;
               border: none;
               border-radius: 0;
               padding: 0;
@@ -135,11 +135,11 @@ body {
               }
             }
           }
-          &:hover {
+          /*&:hover {
             .dropdown-menu {
               display: block;
             }
-          }
+          }*/
         }
       }
       .nav-button {

@@ -35,11 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  const dropdowns = document.querySelectorAll('.dropdown');
+  /*const dropdowns = document.querySelectorAll('.dropdown');
 
   dropdowns.forEach((dropdown) => {
     const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
     const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+    let firstClick = true;
 
     dropdown.addEventListener('mouseover', function () {
       dropdownToggle.classList.add('show');
@@ -47,17 +48,53 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdownMenu.classList.add('show');
       dropdownMenu.setAttribute('data-bs-popper', 'none');
     });
-    dropdown.addEventListener('click', function () {
-      dropdownToggle.classList.add('show');
-      dropdownToggle.setAttribute('aria-expanded', 'true');
-      dropdownMenu.classList.add('show');
-      dropdownMenu.setAttribute('data-bs-popper', 'none');
-    });
+
     dropdown.addEventListener('mouseout', function () {
       dropdownToggle.classList.remove('show');
       dropdownToggle.setAttribute('aria-expanded', 'false');
       dropdownMenu.classList.remove('show');
       dropdownMenu.removeAttribute('data-bs-popper', 'none');
     });
-  });
+
+    dropdown.addEventListener('click', function () {
+      if (firstClick) {
+        dropdownToggle.classList.add('show');
+        dropdownToggle.setAttribute('aria-expanded', 'true');
+        dropdownMenu.classList.add('show');
+        dropdownMenu.setAttribute('data-bs-popper', 'none');
+        firstClick = false;
+      } else {
+        dropdownToggle.classList.remove('show');
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+        dropdownMenu.classList.remove('show');
+        dropdownMenu.removeAttribute('data-bs-popper', 'none');
+        firstClick = true;
+      }
+    });
+  });*/
+
+  if (window.innerWidth >= 992) {
+    document
+      .querySelectorAll('.navbar .nav-item')
+      .forEach(function (everyitem) {
+        everyitem.addEventListener('mouseover', function (e) {
+          let el_link = this.querySelector('a[data-bs-toggle]');
+
+          if (el_link != null) {
+            let nextEl = el_link.nextElementSibling;
+            el_link.classList.add('show');
+            nextEl.classList.add('show');
+          }
+        });
+        everyitem.addEventListener('mouseleave', function (e) {
+          let el_link = this.querySelector('a[data-bs-toggle]');
+
+          if (el_link != null) {
+            let nextEl = el_link.nextElementSibling;
+            el_link.classList.remove('show');
+            nextEl.classList.remove('show');
+          }
+        });
+      });
+  }
 });
