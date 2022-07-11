@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  /*const dropdowns = document.querySelectorAll('.dropdown');
+  const dropdowns = document.querySelectorAll('.dropdown');
 
   dropdowns.forEach((dropdown) => {
     const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
@@ -59,5 +59,5 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdownMenu.classList.remove('show');
       dropdownMenu.removeAttribute('data-bs-popper', 'none');
     });
-  });*/
+  });
 });

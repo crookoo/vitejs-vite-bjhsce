@@ -2,6 +2,7 @@ $primary: #76b82a;
 $lightgreen: #d2e8b7;
 $lightergreen: #ecf4e2;
 $black: #070d0d;
+$lightergray: #d1d1d1;
 
 @import '/node_modules/bootstrap/scss/bootstrap';
 
@@ -107,19 +108,37 @@ body {
             &.show {
               color: $primary;
             }
-            /*@include media-breakpoint-up(md) {
-              .dropdown-menu {
+          }
+          &.dropdown {
+            .dropdown-toggle {
+              &:after {
                 display: none;
               }
-              &:hover {
-                .dropdown-menu {
-                  display: block;
-                  top: 100%;
-                  left: 0;
-                  margin-top: 0;
+            }
+            .dropdown-menu {
+              display: none;
+              top: 100%;
+              left: -1.65rem;
+              margin-top: 0;
+              border: none;
+              border-radius: 0;
+              padding: 0;
+              font-size: 1.313rem;
+              li {
+                border-top: 1px solid $lightergray;
+                .dropdown-item {
+                  padding: 0.6rem 1.65rem;
+                  &:hover {
+                    background-color: #f5f5f5;
+                  }
                 }
               }
-            }*/
+            }
+          }
+          &:hover {
+            .dropdown-menu {
+              display: block;
+            }
           }
         }
       }
