@@ -43,21 +43,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     dropdown.addEventListener('mouseover', function () {
       dropdownToggle.classList.add('show');
-      dropdownToggle.setAttribute('aria-expanded', 'true');
+      //dropdownToggle.setAttribute('aria-expanded', 'true');
       dropdownMenu.classList.add('show');
-      dropdownMenu.setAttribute('data-bs-popper', 'none');
+      //dropdownMenu.setAttribute('data-bs-popper', 'none');
     });
-    dropdown.addEventListener('click', function () {
+    /*dropdown.addEventListener('click', function () {
       dropdownToggle.classList.add('show');
-      dropdownToggle.setAttribute('aria-expanded', 'true');
+      //dropdownToggle.setAttribute('aria-expanded', 'true');
       dropdownMenu.classList.add('show');
-      dropdownMenu.setAttribute('data-bs-popper', 'none');
-    });
+      //dropdownMenu.setAttribute('data-bs-popper', 'none');
+    });*/
     dropdown.addEventListener('mouseout', function () {
       dropdownToggle.classList.remove('show');
-      dropdownToggle.setAttribute('aria-expanded', 'false');
+      //dropdownToggle.setAttribute('aria-expanded', 'false');
       dropdownMenu.classList.remove('show');
-      dropdownMenu.removeAttribute('data-bs-popper', 'none');
+      //dropdownMenu.removeAttribute('data-bs-popper', 'none');
     });
   });
 });
