@@ -99,14 +99,17 @@ body {
             padding-bottom: 8px;
             margin-right: 47px;
             color: $black;
+            transition: none;
             &.active {
               border-top: 8px solid $primary;
               padding-top: 0;
               color: $primary;
             }
-            &:hover,
             &.show {
               color: $primary;
+            }
+            &:focus-visible {
+              outline: none;
             }
           }
           &.dropdown {
