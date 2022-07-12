@@ -70,7 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
           if (el_link != null) {
             let nextEl = el_link.nextElementSibling;
             el_link.classList.add('show');
+            el_link.setAttribute('aria-expanded', 'true');
             nextEl.classList.add('show');
+            nextEl.setAttribute('data-bs-popper', 'none');
             firstClick = false;
           }
         });
@@ -80,7 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
           if (el_link != null) {
             let nextEl = el_link.nextElementSibling;
             el_link.classList.remove('show');
+            el_link.setAttribute('aria-expanded', 'false');
             nextEl.classList.remove('show');
+            nextEl.removeAttribute('data-bs-popper', 'none');
             firstClick = true;
           }
         });
@@ -92,11 +96,15 @@ document.addEventListener('DOMContentLoaded', () => {
             let nextEl = el_link.nextElementSibling;
             if (firstClick) {
               el_link.classList.add('show');
+              el_link.setAttribute('aria-expanded', 'true');
               nextEl.classList.add('show');
+              nextEl.setAttribute('data-bs-popper', 'none');
               firstClick = false;
             } else {
               el_link.classList.remove('show');
+              el_link.setAttribute('aria-expanded', 'false');
               nextEl.classList.remove('show');
+              nextEl.removeAttribute('data-bs-popper', 'none');
               firstClick = true;
             }
           }
