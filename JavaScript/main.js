@@ -62,15 +62,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document
       .querySelectorAll('.navbar .nav-item')
       .forEach(function (everyitem) {
-        /*everyitem.addEventListener('mouseover', function (e) {
+        let firstClick = true;
+
+        everyitem.addEventListener('mouseover', function (e) {
           let el_link = this.querySelector('a[data-bs-toggle]');
-          let firstClick = true;
 
           if (el_link != null) {
             let nextEl = el_link.nextElementSibling;
             el_link.classList.add('show');
             nextEl.classList.add('show');
-            let firstClick = false;
+            firstClick = false;
           }
         });
         everyitem.addEventListener('mouseleave', function (e) {
@@ -80,12 +81,13 @@ document.addEventListener('DOMContentLoaded', () => {
             let nextEl = el_link.nextElementSibling;
             el_link.classList.remove('show');
             nextEl.classList.remove('show');
-            let firstClick = true;
+            firstClick = true;
           }
-        });*/
+        });
 
         everyitem.addEventListener('click', function () {
           let el_link = this.querySelector('a[data-bs-toggle]');
+
           if (el_link != null) {
             let nextEl = el_link.nextElementSibling;
             if (firstClick) {
