@@ -75,16 +75,18 @@ header {
         align-items: center;
         .navbar-toggler {
           border: none;
-          padding: 0;
+          padding: 3px 10px;
+          border-radius: 0;
+          background-color: #eaeaea;
           div {
             width: 32px;
             height: 3px;
             background-color: $black;
             margin: 8px 0;
           }
-          &:focus {
+          /*&:focus {
             box-shadow: none;
-          }
+          }*/
         }
       }
       .navbar-collapse {
