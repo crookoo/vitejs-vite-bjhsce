@@ -182,38 +182,50 @@ header {
       }
     }
   }
-  .navbar-searchfield-inner {
-    border-top: 1px solid $lightergray;
-    background-color: #f3f3f3;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    form.gsc-search-box {
-      margin-bottom: 0;
-      table {
+  .navbar-searchfield {
+    position: absolute;
+    top: 0;
+    @include media-breakpoint-up(md) {
+      position: relative;
+    }
+    .navbar-searchfield-inner {
+      border-top: 1px solid $lightergray;
+      background-color: #f3f3f3;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      @include media-breakpoint-up(md) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+      form.gsc-search-box {
         margin-bottom: 0;
-        td.gsib_b {
-          vertical-align: bottom;
-          span.gscb_a {
-            font-size: 30px;
-            line-height: 28px;
+        table {
+          margin-bottom: 0;
+          .gsc-input-box {
+            border-radius: 0;
           }
-        }
-        .gsc-search-button-v2 {
-          border-radius: 0;
-          margin-top: 0;
-          padding-top: 8px;
-          padding-bottom: 8px;
-          border: none;
-          svg {
-            width: 19px;
-            height: 19px;
+          td.gsib_b {
+            vertical-align: bottom;
+            span.gscb_a {
+              font-size: 30px;
+              line-height: 28px;
+            }
+          }
+          .gsc-search-button-v2 {
+            border-radius: 0;
+            margin-top: 0;
+            padding: 10px 15px;
+            svg {
+              width: 25px;
+              height: 24px;
+            }
           }
         }
       }
     }
   }
   .navbar-buttons {
-    border-top: 1px solid #e1efd0;
+    border-top: 1px solid $lightergray;
     background-color: white;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -237,9 +249,11 @@ header {
         }
       }
     }
-    .navbar-searchfield-inner {
-      padding-top: 20px;
-      padding-bottom: 20px;
+    @include media-breakpoint-up(md) {
+      .navbar-searchfield-inner {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
     }
   }
 }
