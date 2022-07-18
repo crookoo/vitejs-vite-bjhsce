@@ -69,24 +69,34 @@ header {
         @include media-breakpoint-up(md) {
           width: 160px;
         }
+        @include media-breakpoint-only(lg) {
+          width: 140px;
+        }
       }
-      .navbar-toggler-wrapper {
+      .navbar-mobile-wrapper {
         display: flex;
         align-items: center;
+        .nav-lupe {
+          margin-right: 24px;
+          a {
+            padding: 5px;
+          }
+          svg {
+            height: 27px;
+          }
+        }
         .navbar-toggler {
           border: none;
-          padding: 3px 10px;
-          border-radius: 0;
-          background-color: #eaeaea;
+          padding: 0;
           div {
             width: 32px;
             height: 3px;
             background-color: $black;
             margin: 8px 0;
           }
-          /*&:focus {
+          &:focus {
             box-shadow: none;
-          }*/
+          }
         }
       }
       .navbar-collapse {
@@ -109,6 +119,10 @@ header {
               margin-right: 47px;
               color: $black;
               transition: none;
+              @include media-breakpoint-only(lg) {
+                font-size: 20px;
+                margin-right: 34px;
+              }
               &.active {
                 border-top: 8px solid $primary;
                 padding-top: 0;
@@ -148,9 +162,22 @@ header {
             }
           }
         }
+        .nav-lupe,
         .nav-button {
           display: flex;
           align-items: center;
+        }
+        .nav-lupe {
+          margin-right: 47px;
+          @include media-breakpoint-only(lg) {
+            margin-right: 35px;
+          }
+          a {
+            padding: 5px;
+          }
+          svg {
+            height: 27px;
+          }
         }
       }
     }
