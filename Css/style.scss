@@ -180,6 +180,22 @@ header {
           }
         }
       }
+      .nav-lupe {
+        .lupe {
+          display: none;
+        }
+        .times {
+          display: block;
+        }
+        .collapsed {
+          .lupe {
+            display: block;
+          }
+          .times {
+            display: none;
+          }
+        }
+      }
     }
   }
   .navbar-searchfield {
@@ -189,13 +205,12 @@ header {
       position: relative;
     }
     &.collapsing {
-      transition: none;
-      /*transition-duration: 0.2s;
-      transition-timing-function: cubic-bezier(0.79, 0.01, 0, 1.02);*/
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.79, 0.01, 0, 1.02);
     }
     .navbar-searchfield-inner {
       border-top: 1px solid $lightergray;
-      background-color: #f3f3f3;
+      background-color: white;
       padding-top: 12px;
       padding-bottom: 12px;
       @include media-breakpoint-up(md) {
@@ -206,21 +221,27 @@ header {
         margin-bottom: 0;
         table {
           margin-bottom: 0;
-          .gsc-input-box {
-            border-radius: 0;
-            padding-right: 12px;
-          }
-          td.gsib_b {
-            vertical-align: bottom;
-            span.gscb_a {
-              font-size: 30px;
-              line-height: 28px;
+          td.gsc-input {
+            padding-right: 0;
+            .gsc-input-box {
+              border-radius: 0;
+              padding: 0 6px;
+              line-height: 35px;
+            }
+            td.gsib_b {
+              vertical-align: bottom;
+              span.gscb_a {
+                font-size: 30px;
+                line-height: 28px;
+              }
             }
           }
           .gsc-search-button-v2 {
             border-radius: 0;
-            margin-top: 0;
+            margin: 0;
             padding: 10px 15px;
+            background-color: $primary;
+            border-color: $primary;
             svg {
               width: 25px;
               height: 24px;
