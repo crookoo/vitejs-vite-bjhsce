@@ -188,6 +188,11 @@ header {
     @include media-breakpoint-up(md) {
       position: relative;
     }
+    &.collapsing {
+      transition: none;
+      /*transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.79, 0.01, 0, 1.02);*/
+    }
     .navbar-searchfield-inner {
       border-top: 1px solid $lightergray;
       background-color: #f3f3f3;
@@ -203,6 +208,7 @@ header {
           margin-bottom: 0;
           .gsc-input-box {
             border-radius: 0;
+            padding-right: 12px;
           }
           td.gsib_b {
             vertical-align: bottom;
