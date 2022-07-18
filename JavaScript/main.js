@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.scrollTop > offsetTop ||
       document.documentElement.scrollTop > offsetTop
     ) {
-      document.getElementById('navbar').classList.add('shrink');
+      document.getElementById('header').classList.add('shrink');
     } else {
-      document.getElementById('navbar').classList.remove('shrink');
+      document.getElementById('header').classList.remove('shrink');
     }
   }
 
