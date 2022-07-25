@@ -344,4 +344,10 @@ main {
   }
 }
 
+.keen-slider:not([data-keen-slider-disabled]) {
+  &.row {
+    flex-wrap: nowrap;
+  }
+}
+
 @import 'mmenu-custom.scss';

@@ -115,4 +115,18 @@ document.addEventListener('DOMContentLoaded', () => {
   window.onload = function () {
     document.getElementById('gsc-i-id1').placeholder = 'Suchwort eingeben ...';
   };
+
+  var slider = new KeenSlider('#my-keen-slider', {
+    mode: 'snap',
+    loop: true,
+    slides: {
+      origin: 'center',
+      perView: 1.25,
+    },
+    breakpoints: {
+      '(min-width: 768px)': {
+        disabled: true,
+      },
+    },
+  });
 });
