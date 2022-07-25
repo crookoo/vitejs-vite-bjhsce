@@ -121,9 +121,15 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: true,
     slides: {
       origin: 'center',
-      perView: 1.25,
+      perView: 1.35,
     },
     breakpoints: {
+      '(min-width: 576px)': {
+        slides: {
+          origin: 'center',
+          perView: 2.1,
+        },
+      },
       '(min-width: 768px)': {
         disabled: true,
       },
