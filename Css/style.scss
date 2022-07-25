@@ -235,11 +235,13 @@ header {
             padding-right: 12px;
             .gsc-input-box {
               border-radius: 0;
+              border-color: $lightergray;
               padding: 0 6px;
               line-height: 33px;
               input.gsc-input {
                 font-size: 18px;
                 /*vertical-align: middle;*/
+                background: none !important;
                 &::placeholder {
                   font-size: 18px;
                   vertical-align: middle;
