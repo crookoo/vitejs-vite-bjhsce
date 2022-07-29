@@ -116,9 +116,29 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('gsc-i-id1').placeholder = 'Suchwort eingeben ...';
   };
 
-  var slider = new KeenSlider('#my-keen-slider', {
+  const slider = new KeenSlider('#my-keen-slider', {
     mode: 'snap',
     loop: true,
+    slides: {
+      origin: 'center',
+      perView: 1.35,
+    },
+    breakpoints: {
+      '(min-width: 576px)': {
+        slides: {
+          origin: 'center',
+          perView: 2.1,
+        },
+      },
+      '(min-width: 768px)': {
+        disabled: true,
+      },
+    },
+  });
+
+  const slider2 = new KeenSlider('#keen-slider-next-seminars', {
+    mode: 'snap',
+    loop: false,
     slides: {
       origin: 'center',
       perView: 1.35,
