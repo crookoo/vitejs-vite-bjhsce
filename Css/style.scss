@@ -51,6 +51,13 @@ body {
   padding: 0.65rem 1.35rem;
 }
 
+.lead {
+  font-size: calc(1.1rem + 0.3vw);
+  font-weight: 400;
+}
+
+/* ================================================================= */
+
 .bg-lightgreen {
   background-color: $lightgreen;
 }
@@ -500,6 +507,24 @@ main {
         }
       }
     }
+  }
+
+  .vsb-hero {
+
+    h1,
+    h4,
+    img {
+      margin-bottom: 1.25rem;
+    }
+
+    .lead {
+      margin-bottom: 6%;
+    }
+
+    h4 {
+      color: $primary;
+    }
+
   }
 }
 
