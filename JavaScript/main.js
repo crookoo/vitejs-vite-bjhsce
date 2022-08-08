@@ -23,7 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function scrollFunction() {
-    const offsetTop = 60;
+    const topBoxHeight = document.getElementById('topInfoBox').offsetHeight;
+    const headerHeight = document.getElementById('header').offsetHeight;
+    const offsetAddition = 75;
+    const offsetTop = topBoxHeight + headerHeight - offsetAddition;
+    console.log(window.pageYOffset, document.documentElement.scrollTop, topBoxHeight, headerHeight, offsetTop);
     if (
       window.pageYOffset > offsetTop ||
       document.body.scrollTop > offsetTop ||
