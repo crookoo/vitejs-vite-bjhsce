@@ -234,6 +234,8 @@ main {
 
 footer {
 
+  font-size: calc(1.0rem + 0.2vw);
+
   a {
     text-decoration: none;
     color: white;
@@ -263,7 +265,6 @@ footer {
   .footer-bottom {
     background-color: $darkergray;
     color: $secondary;
-    font-size: 20px;
 
     a {
       color: $secondary;
