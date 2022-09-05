@@ -1,11 +1,14 @@
 .mm-menu {
   --mm-listitem-size: 3.5rem;
   font-size: 1.125rem;
+
   .mm-navbars_top,
   .mm-navbars_bottom {
     --mm-color-background: #76b82a;
     --mm-navbar-size: 3.5rem;
+
     .mm-navbar {
+
       a,
       a:focus,
       a:hover {
@@ -13,26 +16,32 @@
       }
     }
   }
+
   .mm-navbars_top {
     .mm-navbar {
       border-bottom: none;
     }
   }
+
   .mm-navbars_bottom {
     .mm-navbar {
       &:first-child {
         border-top: none;
       }
+
       a:first-child {
         border-right: 1px solid $lightergreen;
       }
     }
   }
+
   .mm-panels {
     --mm-color-background: #ecf4e2;
     font-size: 1.25rem;
     color: $black;
+
     .mm-listitem {
+
       .mm-btn--next:after,
       .mm-btn--prev:before {
         width: 10px;
@@ -41,9 +50,12 @@
     }
   }
 }
+
 .mm-slideout {
+  min-height: 100vh;
   box-shadow: -3px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
 .mm-wrapper__blocker {
   background: none !important;
 }

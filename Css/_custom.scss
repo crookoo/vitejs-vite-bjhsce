@@ -1,0 +1,54 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sticky-top {
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+}
+
+.btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+
+  &.btn-primary {
+    color: #fff;
+  }
+
+  &.btn-secondary {
+    background-color: #a9a9a9;
+    border-color: #a9a9a9;
+    color: white;
+  }
+
+  &.btn-ghost {
+    background-color: #fff;
+    border-color: #fff;
+    color: $primary;
+  }
+}
+
+.btn-sm {
+  padding: 0.65rem 1.35rem;
+}
+
+.lead {
+  font-size: calc(1.1rem + 0.3vw);
+  font-weight: 400;
+}
+
+/* ================================================================= */
+
+.bg-lightgreen {
+  background-color: $lightgreen;
+}
+
+.bg-lightgreen-gradient {
+  background: rgb(238, 246, 228);
+  background: linear-gradient(130deg, rgba(238, 246, 228, 1) 0%, rgba(210, 232, 183, 1) 100%);
+}

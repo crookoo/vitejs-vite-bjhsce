@@ -22,7 +22,7 @@
   }
 }
 
-header {
+#page-header {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.1);
 
   .navbar {
@@ -118,6 +118,7 @@ header {
                 color: $primary;
               }
 
+              &:hover,
               &.show {
                 color: $primary;
               }
@@ -152,6 +153,10 @@ header {
 
                     &:hover {
                       background-color: #f5f5f5;
+                    }
+
+                    &:active {
+                      color: $black;
                     }
                   }
                 }

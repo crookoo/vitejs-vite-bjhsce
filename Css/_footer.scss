@@ -1,0 +1,43 @@
+footer {
+
+  font-size: calc(1.0rem + 0.2vw);
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  .footer-top {
+    background-color: $darkgray;
+    color: white;
+
+    h3 {
+      margin-bottom: 1.5rem;
+    }
+
+    svg {
+      width: 56px;
+      height: 56px;
+      margin-right: 7px;
+      filter: invert(1);
+    }
+  }
+
+  .footer-bottom {
+    background-color: $darkergray;
+    color: $secondary;
+
+    a {
+      color: $secondary;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

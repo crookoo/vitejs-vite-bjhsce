@@ -1,0 +1,11 @@
+.keen-slider:not([data-keen-slider-disabled]) {
+  &.row {
+    flex-wrap: nowrap;
+    width: 100vw;
+    margin-left: calc(-0.75 * var(--bs-gutter-x));
+
+    .keen-slider__slide {
+      padding-bottom: 5px;
+    }
+  }
+}

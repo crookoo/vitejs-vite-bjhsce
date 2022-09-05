@@ -23,19 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function scrollFunction() {
-    const topBoxHeight = document.getElementById('topInfoBox').offsetHeight;
-    const headerHeight = document.getElementById('header').offsetHeight;
+    const topBoxHeight = document.getElementById('topInfoBox') ? document.getElementById('topInfoBox').offsetHeight : 0;
+    const headerHeight = document.getElementById('page-header').offsetHeight;
     const offsetAddition = 75;
     const offsetTop = topBoxHeight + headerHeight - offsetAddition;
-    console.log(window.pageYOffset, document.documentElement.scrollTop, topBoxHeight, headerHeight, offsetTop);
     if (
       window.pageYOffset > offsetTop ||
       document.body.scrollTop > offsetTop ||
       document.documentElement.scrollTop > offsetTop
     ) {
-      document.getElementById('header').classList.add('shrink');
+      document.getElementById('page-header').classList.add('shrink');
     } else {
-      document.getElementById('header').classList.remove('shrink');
+      document.getElementById('page-header').classList.remove('shrink');
     }
   }
 
