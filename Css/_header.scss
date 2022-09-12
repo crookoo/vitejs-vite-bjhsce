@@ -158,6 +158,11 @@
                     &:active {
                       color: $black;
                     }
+
+                    &.active {
+                      background: none;
+                      color: $primary;
+                    }
                   }
                 }
               }
