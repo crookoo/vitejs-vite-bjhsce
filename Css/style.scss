@@ -11,6 +11,10 @@ $darkergray: #4a4643; //a5a3a1
 $spacer: 1.25rem; // 1rem
 $grid-gutter-width: 1.875rem !default; // 1.5rem
 
+$paragraph-margin-bottom: 1.25rem !default;
+
+$headings-margin-bottom: $spacer  !default;
+
 @import '/node_modules/bootstrap/scss/bootstrap';
 
 @import 'custom';

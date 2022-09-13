@@ -2,6 +2,21 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+p, ul, ol, table {
+  hyphens: auto;
+
+  @include media-breakpoint-only(md) {
+    font-size: 1.125rem;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 1.25rem;
+  }
+}
+
+h3 {
+  font-weight: 700;
+}
+
 .sticky-top {
   position: sticky;
   position: -webkit-sticky;
@@ -48,7 +63,12 @@ body {
   background-color: $lightgreen;
 }
 
-.bg-lightgreen-gradient {
+.bg-lightgreen-gradient,
+.frame-background-tertiary {
   background: rgb(238, 246, 228);
   background: linear-gradient(130deg, rgba(238, 246, 228, 1) 0%, rgba(210, 232, 183, 1) 100%);
+}
+
+.frame-background-light {
+  background-color: $lightergray;
 }

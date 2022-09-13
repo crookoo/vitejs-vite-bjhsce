@@ -48,6 +48,7 @@ main {
       .tile-title {
         margin-bottom: 0;
         font-size: inherit;
+        font-weight: 500;
       }
     }
 
@@ -122,7 +123,8 @@ main {
     }
   }
 
-  .vsb-hero {
+  .vsb-hero,
+  .frame-layout-hero {
 
     h1,
     h4,
